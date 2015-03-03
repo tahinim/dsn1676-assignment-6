@@ -5,18 +5,14 @@ $btnShow.on ('click', function() {
     $box.toggleClass('js-box-show-hide');
 });
 
+
+
 var $btnmove = $('.btn-move');
 var $pink = $('.diamond');
 
 $btnmove.on ('click',function () {
     $pink.toggleClass ('js-diamond-slide');
 });
-
-
-
-
-
-
 
 
 
@@ -28,3 +24,14 @@ $btnExpand.on ('click', function () {
 });
 
 
+
+var $btnbounce = $('.btn-bounce');
+var $orange = $('.circle');
+
+$btnbounce.on ('click',function () {
+    $orange.addClass ('js-btn-bounce');
+});
+
+$orange.on ('animationend', function () {
+    $orange.removeClass ('js-btn-bounce');
+});

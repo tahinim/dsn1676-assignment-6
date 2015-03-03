@@ -40,7 +40,7 @@ div {
   right: 2em;
   top: calc(50% - 40px);
   width: 80px;
-
+  transition: all 250ms ease-in;
   background-color: hotpink;
   transform: rotate(45deg);
 }
@@ -67,8 +67,26 @@ div {
   height: 100px;
   top: calc(50% - 50px);
   width: 100px;
-
+  position: absolute;
   background-color: orange;
+}
+
+@keyframes btn-bounce {
+    0% {
+    left: 90px;
+    }
+    
+    40% {
+        top: 65px;
+    }
+    
+    60% {
+        left: 100px;
+    }
+    
+    100% {
+        right: 100px;
+    }
 }
 
 .list {
@@ -105,5 +123,11 @@ div {
 }
 
 .js-diamond-slide {
-    transform: left -50px;
+    right: -5em;
+    transition: all 250ms ease-out;
+    
+}
+
+.js-btn-bounce {
+    animation: btn-bounce 1s linear;
 }

@@ -33,11 +33,12 @@ div {
   width: 200px;
   background-color: limegreen;
   transition: all 250ms ease-in;
+  opacity: 0;
 }
 
 .diamond {
   height: 80px;
-  right: 2em;
+  right: 4em;
   top: calc(50% - 40px);
   width: 80px;
   transition: all 250ms ease-in;
@@ -118,7 +119,7 @@ div {
 }
 
 .js-box-show-hide {
-    opacity: 0;
+    opacity: 1;
     transition: all 250ms ease-out;
 }
 

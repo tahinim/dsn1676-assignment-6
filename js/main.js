@@ -35,3 +35,15 @@ $btnbounce.on ('click',function () {
 $orange.on ('animationend', function () {
     $orange.removeClass ('js-btn-bounce');
 });
+
+
+var $btnAppend = $('.btn-append');
+var $list = $('.list');
+
+$btnAppend.on ('click' , function () {
+    
+    var $li = $("<li>").html ('New List Items');
+    $list.prepend($li);
+    $li .addClass ('new-li')
+});
+    

@@ -106,7 +106,7 @@ div {
 
 .list li {
   padding: 0.5em;
-
+  overflow: hidden;
   background-color: plum;
   border: 1px solid mediumpurple;
 
@@ -132,3 +132,15 @@ div {
 .js-btn-bounce {
     animation: btn-bounce 1s linear;
 }
+
+.new-li {
+    animation: js-apend 1s ease-in;
+}
+
+@keyframes js-apend {
+    0% {
+        max-height: 5px ;
+    }
+    100% {
+        max-height: 4em;
+    }
